@@ -4,10 +4,10 @@ var Twit= require('twit'); //importing the modeule 'twit'to the project
 module.exports = function(res, query, numb){
 
 var T = new Twit({
-  consumer_key:         '2xZvRzy6ynNoIlLWufvT3Wl5u',
-  consumer_secret:      'AlY6yIOsWYQP0EUYuKe6HAblvPWK8IAqhGjLyEfsbcq8pM9NuW',
-  access_token:         '88980301-ZxUJ5OpxuIgnhnKSYOuFnCW5l5t27FL7***yolYjf',
-  access_token_secret:  'GfwNlkcHPBr2xEThi9lEIVSl2X6e85***KUxWcK4iINBu',
+  consumer_key:         '**********************************',
+  consumer_secret:      '**********************************',
+  access_token:         '**********************************',
+  access_token_secret:  '**********************************',
   timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests.
 });
 
