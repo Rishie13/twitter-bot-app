@@ -1,0 +1,41 @@
+html
+  head
+    title Twitter Bot App!
+    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
+  body
+    .main.container
+      .row
+        .col-md-6.col-md-offset-3
+          h1.display-4.m-b-2 Live Tweets!
+          form(action="get_tweets", method="POST")
+            h4.display-4.m-b-2 Number of tweets to display:
+            input.form-control(type="text", name="number", placeholder="10")
+            br
+            h4.display-4.m-b-2 Search keywords:
+            input.form-control(type="text", name="keyword", placeholder="Alex Sandro")
+            br
+            input.btn.btn-primary(type="submit", value="Get Tweets!")
+            br
+            br
+            hr
+            h4.display-4.m-b-2
+              | This app uses 
+              b Node.js
+              |  and 
+              b Express.js
+              |  to interact with the Twitter API via an 
+              b npm
+              |  library called 
+              b Twit
+              |  and fetches the texts of latest tweets that contain the searched keyword. The app makes a 
+              b GET
+              |  request to the Twitter API and then a 
+              b POST
+              |  request to post/render the result query to the front-end. The front-end is 
+              b Bootstrap+Pug
+              | . App depolyed on 
+              b Heroku
+            br
+            h1.display-4.m-b-2 TL;DR
+            br
+            h4.display-4.m-b-2 See what people are saying about Donald Trump right now!
